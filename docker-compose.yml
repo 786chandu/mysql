@@ -1,0 +1,14 @@
+version: '3.3'
+services:
+  database:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'LNCT'
+      MYSQL_USER: 'lisa'
+      MYSQL_PASSWORD: 'redhat'
+      MYSQL_ROOT_PASSWORD: 'redhat'
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
